@@ -1,0 +1,13 @@
+{
+	"manifest_version":2,
+	"name": "Display Plugin",
+	"description": "This plugin display meanings of API calls in stack overflow.",
+	"version": "1.0",
+
+	"permissions": ["<all_urls>","activeTab"],
+
+	"content_scripts": [{
+		"matches": ["https://stackoverflow.com/questions/*"],
+		"js": ["jquery-3.3.1.min.js","getCode.js"]
+	}]
+}
